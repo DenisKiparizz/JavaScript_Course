@@ -6,7 +6,25 @@ let appData = {
     expenses: {},
     dontHaveToExp: {},
     overIncome: [],
-    saving: true
+    saving: true,
+    // start: start(),
+    // ch: checkExpences(),
+    // getDailyBudget: getDailyBudget(),
+    // detectLevel: detectLevel(),
+    // checkSavings: checkSavings(),
+    // optionalBills: optionalBills(),
+    choseIncime: function () {
+        let quest;
+        while (!isNaN(quest) || quest == null || quest == '') {
+            quest = prompt("What can bring income", "");
+        }
+        appData.overIncome = quest.split(',');
+        appData.overIncome.push(prompt("Something else ?"));
+        console.log('Additional income:');
+        appData.overIncome.forEach(function (item, i) {
+            console.log(i + ": " + item);
+        })
+    }
 }
 
 start();
@@ -37,7 +55,7 @@ function optionalBills() {
         1: opt,
     }
 }
-
+//This case have a problem
 function checkExpences() {
     for (let i = 0; i < 1; i++) {
         let {exp, exp2} = necessaryBills();
@@ -79,4 +97,7 @@ function checkSavings() {
 }
 
 console.log(appData);
-
+console.log("AppData include:")
+for (let key in appData) {
+    console.log(key)
+}
