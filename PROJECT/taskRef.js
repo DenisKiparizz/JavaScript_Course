@@ -7,12 +7,6 @@ let appData = {
     dontHaveToExp: {},
     overIncome: [],
     saving: true,
-    // start: start(),
-    // ch: checkExpences(),
-    // getDailyBudget: getDailyBudget(),
-    // detectLevel: detectLevel(),
-    // checkSavings: checkSavings(),
-    // optionalBills: optionalBills(),
     choseIncime: function () {
         let quest;
         while (!isNaN(quest) || quest == null || quest == '') {
