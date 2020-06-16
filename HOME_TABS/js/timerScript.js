@@ -1,5 +1,5 @@
 //End date
-let deadLine = '2020-06-12';
+let deadLine = '2020-06-19';
 let message = document.querySelector(".timer-action");
 
 
