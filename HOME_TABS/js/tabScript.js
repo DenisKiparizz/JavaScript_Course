@@ -8,7 +8,7 @@ window.addEventListener("DOMContentLoaded", function () {
     let tabContent = document.querySelectorAll(".info-tabcontent");
 
     //Скрываем все , кроме первого или любоо другого tabContent
-    hideTabContent(0);
+    hideTabContent(1);
 
     //Данна функция манипулирует css функциями
     function hideTabContent(a) {

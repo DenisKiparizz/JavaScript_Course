@@ -11,7 +11,7 @@ function getTimeRemaining(endTime) {
     let seconds = Math.floor((temp / 1000) % 60);
     let minutes = Math.floor((temp / 1000 / 60) % 60);
     let hours = Math.floor((temp / 1000 / 60 / 60));
-    if (seconds <= 0) {
+    if (temp <= 0) {
         message.textContent = 'Время вышло';
         return {
             'hours': "00",
